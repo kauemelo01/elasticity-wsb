@@ -1,0 +1,7 @@
+# Power BI local files (cache.abf holds a full copy of the model data)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/unappliedChanges.json
+# OS noise
+desktop.ini
+Thumbs.db

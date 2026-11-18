@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Freight Elasticity"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e947fb7d-5c2f-4b64-9a3f-09a4b3bcef5b"
+  }
+}

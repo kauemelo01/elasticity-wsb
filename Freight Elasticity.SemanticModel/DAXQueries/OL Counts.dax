@@ -1,0 +1,17 @@
+EVALUATE
+
+VAR T = SUMMARIZE(
+	'Loads (Main Set)',
+	'Loads (Main Set)'[year-week],
+	'Loads (Main Set)'[lane_kma],
+    "X",[Markup Over ECOH %],
+    "C",[Markup Over ECOH (wo ol) %]
+)
+
+RETURN
+
+ROW(
+	"TOTAL",COUNTROWS(T),
+	"MoE",COUNTX(T,[X]),
+	"MoE(wo ol)",COUNTX(T,[C])
+)

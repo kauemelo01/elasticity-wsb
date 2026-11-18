@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Freight Elasticity"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fdc7b694-2719-4520-b721-b06d3c35681f"
+  }
+}

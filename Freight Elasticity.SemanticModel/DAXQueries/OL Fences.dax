@@ -1,0 +1,23 @@
+EVALUATE
+
+VAR T = FILTER(
+	SUMMARIZE(
+		'Loads (Main Set)',
+		'Loads (Main Set)'[year-week],
+		'Loads (Main Set)'[lane_kma],
+		"X",[Markup Over ECOH %]
+	),
+	[X]<>BLANK()
+)
+
+VAR Q1 = PERCENTILEX.INC(T,[X],.2)
+VAR Q4 = PERCENTILEX.INC(T,[X],.8)
+VAR LF = ROUND(Q1-(Q4-Q1)*1.25,2)
+VAR HF = ROUND(Q4+(Q4-Q1)*1.75,2)
+
+RETURN ROW(
+	"Q4",Q4,
+	"Q1",Q1,
+	"LF",LF,
+	"HF",HF
+)

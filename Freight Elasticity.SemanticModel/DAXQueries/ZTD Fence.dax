@@ -1,0 +1,19 @@
+EVALUATE
+
+VAR T = ADDCOLUMNS(
+    VALUES('Loads (Main Set)'[year-week]),
+    "X",[Markup Over ECOH (wo ol) %],
+    "Y",[Conversion (KMA Level) %]
+)
+
+VAR D = ADDCOLUMNS(T,"D",
+	RANKX(T,[X],,DESC,Dense)-
+	RANKX(T,[Y],,DESC,Dense)
+)
+
+RETURN
+
+ROW(
+	"Q3",PERCENTILEX.INC(D,[D],.25),
+	"Q1",PERCENTILEX.INC(D,[D],.75)
+)

@@ -1,0 +1,17 @@
+EVALUATE
+
+VAR T = ADDCOLUMNS(
+    VALUES('Loads (Main Set)'[year-week]),
+    "X",[Markup Over ECOH (wo ol) %],
+    "Y",[Conversion (KMA Level) %],
+    "C",[Markup Over ECOH (wo ol) %]*[Conversion (KMA Level) %]
+)
+
+VAR D = ADDCOLUMNS(T,"D",
+	RANKX(T,[X],,DESC,Dense)-
+	RANKX(T,[Y],,DESC,Dense)
+)
+
+RETURN
+
+D ORDER BY [D] ASC
