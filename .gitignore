@@ -5,3 +5,13 @@
 # OS noise
 desktop.ini
 Thumbs.db
+.DS_Store
+*Zone.Identifier
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
