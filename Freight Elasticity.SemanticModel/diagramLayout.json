@@ -97,7 +97,7 @@
             "x": 649,
             "y": 0
           },
-          "nodeIndex": "Sonar Volumes",
+          "nodeIndex": "Market Intel A Volumes",
           "nodeLineageTag": "d88772d5-1389-41e6-bd4f-8000b8126e81",
           "size": {
             "height": 104,
@@ -111,7 +111,7 @@
             "x": 940,
             "y": 93
           },
-          "nodeIndex": "Sonar Prices",
+          "nodeIndex": "Market Intel A Prices",
           "nodeLineageTag": "e0ce7668-be30-4573-878c-5ca6e74cd938",
           "size": {
             "height": 104,
@@ -139,7 +139,7 @@
             "x": 650,
             "y": 206
           },
-          "nodeIndex": "DAT Volumes",
+          "nodeIndex": "Market Intel B Volumes",
           "nodeLineageTag": "feb3daf9-3dbe-45f2-b7ef-1fd9d08ce64a",
           "size": {
             "height": 104,

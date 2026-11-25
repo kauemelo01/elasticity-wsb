@@ -171,10 +171,10 @@ WSB measures **how visible a lane is**: how much data exists to price it confide
 | Source | Measure | WINDOW | SHADOW | BLIND |
 |---|---|---|---|---|
 | Brokerage's own loads | `WSB` | > 12 loads **and** > 2 shippers | exactly one of the two | neither |
-| SONAR | `WSB (Sonar)` | lane volume > P99 | lane volume > P97.5 | otherwise |
-| DAT | `WSB (DAT)` | volume > P75 **and** contributors > P90 | exactly one of the two | neither |
+| Market Intel A | `WSB (Market Intel A)` | lane volume > P99 | lane volume > P97.5 | otherwise |
+| Market Intel B | `WSB (Market Intel B)` | volume > P75 **and** contributors > P90 | exactly one of the two | neither |
 
-Market percentiles (`Sonar P99`, `Sonar P98`, `DAT P75`, `DAT P90`) are computed over all lanes, ignoring report filters. The measure is named `Sonar P98`, but it uses the 97.5th percentile.
+Market percentiles (`Market Intel A P99`, `Market Intel A P98`, `Market Intel B P75`, `Market Intel B P90`) are computed over all lanes, ignoring report filters. The measure is named `Market Intel A P98`, but it uses the 97.5th percentile.
 
 ## 6. Market Position
 
@@ -188,7 +188,7 @@ Each WSB level is mapped to an ordinal (WINDOW = 3, SHADOW = 2, BLIND = 1), and 
 | brokerage > market | **Ahead Of Market** |
 | brokerage < market | **Behind Market** |
 
-`Market Position` uses SONAR and `Market Position (DAT)` uses DAT. The calculated table `dim_loads_clusters` takes a snapshot of both positions, the elasticity cluster and the three WSB levels per *KMA lane : equipment*, so they can be used as **slicers** and axes. A measure can't be placed on a slicer directly.
+`Market Position` uses Market Intel A and `Market Position (Market Intel B)` uses Market Intel B. The calculated table `dim_loads_clusters` takes a snapshot of both positions, the elasticity cluster and the three WSB levels per *KMA lane : equipment*, so they can be used as **slicers** and axes. A measure can't be placed on a slicer directly.
 
 Combined with elasticity, this gives the pricing playbook. For example, a *True Inelastic* lane where the brokerage is *Behind Market* has room to price up. A *True Elastic* lane in a market *Window* calls for sharp, benchmark-driven pricing.
 
@@ -197,7 +197,7 @@ Combined with elasticity, this gives the pricing playbook. For example, a *True 
 | Measure | Definition |
 |---|---|
 | `RPM` | bookings ÷ mileage, blanked outside $1–$30 per mile (data-quality guard) |
-| `RPM (Sonar)` | SONAR average rate ÷ mileage, for benchmarking `RPM` |
+| `RPM (Market Intel A)` | Market Intel A average rate ÷ mileage, for benchmarking `RPM` |
 | `Sourcing Spread Base %` | gross sourcing spread ÷ bookings |
 | `Avg. LPW` | loads per week |
 | `# Unique Carriers` | distinct carriers per week (rounded up) |

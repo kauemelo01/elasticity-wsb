@@ -2,7 +2,7 @@
 
 A Power BI model that measures **how sensitive shippers are to price** on each truckload lane of a US freight brokerage, and places every lane against the wider market using a **Window / Shadow / Blind (WSB)** visibility framework.
 
-The question behind it: *if we raise our markup on this lane, do we lose the load?* Lanes where conversion falls as markup rises are **elastic**, and price increases there cost volume. Lanes where conversion holds up are **inelastic**, and there is room to price up. Combining that with how visible the brokerage is on each lane compared with market benchmarks (SONAR and DAT) gives a per-lane pricing playbook.
+The question behind it: *if we raise our markup on this lane, do we lose the load?* Lanes where conversion falls as markup rises are **elastic**, and price increases there cost volume. Lanes where conversion holds up are **inelastic**, and there is room to price up. Combining that with how visible the brokerage is on each lane compared with market benchmarks (Market Intel A and Market Intel B) gives a per-lane pricing playbook.
 
 > The data is a real, frozen snapshot (Jan 2022 – Jul 2024) with **all shipper and carrier identities replaced by fictional names**. See [Data & anonymization](#data--anonymization).
 
@@ -48,8 +48,8 @@ flowchart LR
     P --> CL[Elasticity Clusters<br/>True / Semi Elastic · Neutral · Semi / True Inelastic]
     S --> CL
     L --> W[WSB internal]
-    SV[SONAR volumes] --> WS[WSB SONAR]
-    DV[DAT volumes] --> WD[WSB DAT]
+    SV[Market Intel A volumes] --> WS[WSB Market Intel A]
+    DV[Market Intel B volumes] --> WD[WSB Market Intel B]
     W --> MP[Market Position<br/>Ahead / At / Behind / Not participating]
     WS --> MP
     WD --> MP
@@ -99,7 +99,7 @@ WSB classifies how much visibility exists on a lane:
 - **SHADOW**: one of the two.
 - **BLIND**: neither. Pricing is mostly guesswork.
 
-It's computed three times: from the brokerage's own loads, from SONAR market volumes, and from DAT market volumes and contributor counts. **Market Position** then compares the brokerage's level with the market's: *Ahead of Market*, *At Market*, *Behind Market*, or *Not participating* (the market sees the lane and the brokerage doesn't). Rules: [docs/methodology.md](docs/methodology.md#5-window--shadow--blind-wsb).
+It's computed three times: from the brokerage's own loads, from Market Intel A market volumes, and from Market Intel B market volumes and contributor counts. **Market Position** then compares the brokerage's level with the market's: *Ahead of Market*, *At Market*, *Behind Market*, or *Not participating* (the market sees the lane and the brokerage doesn't). Rules: [docs/methodology.md](docs/methodology.md#5-window--shadow--blind-wsb).
 
 ### 5. The same model, many cuts
 
@@ -126,8 +126,8 @@ Conversion also has two variants, **Lane level** and **KMA level**, and all elas
 | Quotes | 2.77 M | Weekly quote counts by lane, equipment, quoting method |
 | dim_lane | 2.16 M | Lane dimension: city, state, region, KMA, average mileage |
 | dim_carrier | 61 k | Carrier dimension: VIP flag, HQ region, fleet size, power units |
-| Sonar Prices / Volumes | 1.29 M / 93 k | SONAR market rate and volume benchmarks by KMA lane |
-| DAT Volumes | 9 k | DAT spot volumes and contributor counts by KMA lane |
+| Market Intel A Prices / Volumes | 1.29 M / 93 k | Market Intel A market rate and volume benchmarks by KMA lane |
+| Market Intel B Volumes | 9 k | Market Intel B spot volumes and contributor counts by KMA lane |
 | Poisson | 130 | Externally fitted Poisson-regression elasticities |
 
 The data is a frozen snapshot covering **2022-W01 to 2024-W31**. The original warehouse, dataflow and spreadsheet connections were replaced with local Parquet files, so the project runs fully offline.

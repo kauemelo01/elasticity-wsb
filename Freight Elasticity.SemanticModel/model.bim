@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"DataFolder\",\"Loads (Main Set)\",\"dim_lane\",\"dim_carrier\",\"Poisson\",\"Quotes\",\"Sonar Volumes\",\"Sonar Prices\",\"DAT Volumes\"]"
+        "value": "[\"DataFolder\",\"Loads (Main Set)\",\"dim_lane\",\"dim_carrier\",\"Poisson\",\"Quotes\",\"Market Intel A Volumes\",\"Market Intel A Prices\",\"Market Intel B Volumes\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -26,21 +26,21 @@
         "linguisticMetadata": {
           "content": {
             "Entities": {
-              "DAT_volume": {
+              "market_intel_b_volume": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes"
+                    "ConceptualEntity": "Market Intel B Volumes"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "DAT volume": {
+                    "Market Intel B volume": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "dat capacity": {
+                    "market intel b capacity": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -50,7 +50,7 @@
                     }
                   },
                   {
-                    "dat size": {
+                    "market intel b size": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -60,7 +60,7 @@
                     }
                   },
                   {
-                    "dat bulk": {
+                    "market intel b bulk": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -70,7 +70,7 @@
                     }
                   },
                   {
-                    "dat tome": {
+                    "market intel b tome": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -80,7 +80,7 @@
                     }
                   },
                   {
-                    "dat book": {
+                    "market intel b book": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -90,7 +90,7 @@
                     }
                   },
                   {
-                    "dat work": {
+                    "market intel b work": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -100,7 +100,7 @@
                     }
                   },
                   {
-                    "dat edition": {
+                    "market intel b edition": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -111,10 +111,10 @@
                   }
                 ]
               },
-              "DAT_volume.dmast_kma": {
+              "market_intel_b_volume.dmast_kma": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "dmast_kma"
                   }
                 },
@@ -134,10 +134,10 @@
                   }
                 ]
               },
-              "DAT_volume.equip_type": {
+              "market_intel_b_volume.equip_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "equip_type"
                   }
                 },
@@ -257,10 +257,10 @@
                   }
                 ]
               },
-              "DAT_volume.omast_kma": {
+              "market_intel_b_volume.omast_kma": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "omast_kma"
                   }
                 },
@@ -280,10 +280,10 @@
                   }
                 ]
               },
-              "DAT_volume.rate_type": {
+              "market_intel_b_volume.rate_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "rate_type"
                   }
                 },
@@ -409,10 +409,10 @@
                   }
                 ]
               },
-              "DAT_volume.shipper": {
+              "market_intel_b_volume.shipper": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "shippers"
                   }
                 },
@@ -465,10 +465,10 @@
                   }
                 ]
               },
-              "DAT_volume.volumes_key": {
+              "market_intel_b_volume.volumes_key": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "Volumes Key"
                   }
                 },
@@ -594,17 +594,17 @@
                   }
                 ]
               },
-              "DAT_volume.wsb_dat": {
+              "market_intel_b_volume.wsb_market_intel_b": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
-                    "ConceptualProperty": "WSB (DAT)"
+                    "ConceptualEntity": "Market Intel B Volumes",
+                    "ConceptualProperty": "WSB (Market Intel B)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "wsb (dat)": {
+                    "wsb (market intel b)": {
                       "State": "Generated"
                     }
                   },
@@ -616,10 +616,10 @@
                   }
                 ]
               },
-              "dat_volumes.volumes": {
+              "market_intel_b_volumes.volumes": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "DAT Volumes",
+                    "ConceptualEntity": "Market Intel B Volumes",
                     "ConceptualProperty": "volumes"
                   }
                 },
@@ -681,7 +681,7 @@
                     }
                   },
                   {
-                    "DAT Volumes": {
+                    "Market Intel B Volumes": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -4524,17 +4524,17 @@
                   }
                 ]
               },
-              "dim_loads_cluster.WSB_sonar": {
+              "dim_loads_cluster.WSB_market_intel_a": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "dim_loads_clusters",
-                    "ConceptualProperty": "WSB (Sonar)"
+                    "ConceptualProperty": "WSB (Market Intel A)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "WSB (sonar)": {
+                    "WSB (market intel a)": {
                       "State": "Generated"
                     }
                   },
@@ -4668,17 +4668,17 @@
                   }
                 ]
               },
-              "dim_loads_cluster.market_position_DAT": {
+              "dim_loads_cluster.market_position_market_intel_b": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "dim_loads_clusters",
-                    "ConceptualProperty": "Market Position (DAT)"
+                    "ConceptualProperty": "Market Position (Market Intel B)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "market position (DAT)": {
+                    "market position (Market Intel B)": {
                       "State": "Generated"
                     }
                   },
@@ -4819,17 +4819,17 @@
                   }
                 ]
               },
-              "dim_loads_cluster.wsb_dat": {
+              "dim_loads_cluster.wsb_market_intel_b": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "dim_loads_clusters",
-                    "ConceptualProperty": "WSB (DAT)"
+                    "ConceptualProperty": "WSB (Market Intel B)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "wsb (dat)": {
+                    "wsb (market intel b)": {
                       "State": "Generated"
                     }
                   },
@@ -5890,33 +5890,33 @@
                   }
                 ]
               },
-              "lane_set.dat_p75": {
+              "lane_set.market_intel_b_p75": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
-                    "ConceptualProperty": "DAT P75"
+                    "ConceptualProperty": "Market Intel B P75"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "dat p75": {
+                    "market intel b p75": {
                       "State": "Generated"
                     }
                   }
                 ]
               },
-              "lane_set.dat_p90": {
+              "lane_set.market_intel_b_p90": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
-                    "ConceptualProperty": "DAT P90"
+                    "ConceptualProperty": "Market Intel B P90"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "dat p90": {
+                    "market intel b p90": {
                       "State": "Generated"
                     }
                   }
@@ -6735,7 +6735,7 @@
                     }
                   },
                   {
-                    "Market Position (Sonar)": {
+                    "Market Position (Market Intel A)": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6746,17 +6746,17 @@
                   }
                 ]
               },
-              "lane_set.market_position_DAT": {
+              "lane_set.market_position_market_intel_b": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
-                    "ConceptualProperty": "Market Position (DAT)"
+                    "ConceptualProperty": "Market Position (Market Intel B)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "market position (DAT)": {
+                    "market position (Market Intel B)": {
                       "State": "Generated"
                     }
                   },
@@ -7754,17 +7754,17 @@
                   "Value": "Hidden"
                 }
               },
-              "lane_set.sonar_P98": {
+              "lane_set.market_intel_a_P98": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
-                    "ConceptualProperty": "Sonar P98"
+                    "ConceptualProperty": "Market Intel A P98"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "sonar P98": {
+                    "market intel a P98": {
                       "State": "Generated"
                     }
                   },
@@ -7776,17 +7776,17 @@
                   }
                 ]
               },
-              "lane_set.sonar_P99": {
+              "lane_set.market_intel_a_P99": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
-                    "ConceptualProperty": "Sonar P99"
+                    "ConceptualProperty": "Market Intel A P99"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "sonar P99": {
+                    "market intel a P99": {
                       "State": "Generated"
                     }
                   },
@@ -7798,7 +7798,7 @@
                   }
                 ]
               },
-              "lane_set.sonar_key": {
+              "lane_set.market_intel_a_key": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Loads (Main Set)",
@@ -10375,16 +10375,16 @@
                   "Value": "Hidden"
                 }
               },
-              "sonar_price": {
+              "market_intel_a_price": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices"
+                    "ConceptualEntity": "Market Intel A Prices"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "sonar price": {
+                    "market intel a price": {
                       "State": "Generated"
                     }
                   },
@@ -10395,7 +10395,7 @@
                     }
                   },
                   {
-                    "sonar value": {
+                    "market intel a value": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10405,7 +10405,7 @@
                     }
                   },
                   {
-                    "sonar worth": {
+                    "market intel a worth": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10415,7 +10415,7 @@
                     }
                   },
                   {
-                    "sonar fee": {
+                    "market intel a fee": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10425,7 +10425,7 @@
                     }
                   },
                   {
-                    "sonar charge": {
+                    "market intel a charge": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10435,7 +10435,7 @@
                     }
                   },
                   {
-                    "sonar amount": {
+                    "market intel a amount": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10445,7 +10445,7 @@
                     }
                   },
                   {
-                    "sonar bill": {
+                    "market intel a bill": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10455,7 +10455,7 @@
                     }
                   },
                   {
-                    "sonar rate": {
+                    "market intel a rate": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10465,7 +10465,7 @@
                     }
                   },
                   {
-                    "sonar expense": {
+                    "market intel a expense": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10475,7 +10475,7 @@
                     }
                   },
                   {
-                    "sonar cost": {
+                    "market intel a cost": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10485,7 +10485,7 @@
                     }
                   },
                   {
-                    "sonar outlay": {
+                    "market intel a outlay": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -10496,17 +10496,17 @@
                   }
                 ]
               },
-              "sonar_price.RPM_sonar": {
+              "market_intel_a_price.RPM_market_intel_a": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
-                    "ConceptualProperty": "RPM (Sonar)"
+                    "ConceptualEntity": "Market Intel A Prices",
+                    "ConceptualProperty": "RPM (Market Intel A)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "RPM (sonar)": {
+                    "RPM (market intel a)": {
                       "State": "Generated"
                     }
                   },
@@ -10518,10 +10518,10 @@
                   }
                 ]
               },
-              "sonar_price.avg_rate": {
+              "market_intel_a_price.avg_rate": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "avg_rate"
                   }
                 },
@@ -10641,10 +10641,10 @@
                   }
                 ]
               },
-              "sonar_price.destiny": {
+              "market_intel_a_price.destiny": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "destiny"
                   }
                 },
@@ -10757,10 +10757,10 @@
                   }
                 ]
               },
-              "sonar_price.destiny_country": {
+              "market_intel_a_price.destiny_country": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "destiny_country"
                   }
                 },
@@ -10826,10 +10826,10 @@
                   }
                 ]
               },
-              "sonar_price.equip_type": {
+              "market_intel_a_price.equip_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "equip_type"
                   }
                 },
@@ -10949,10 +10949,10 @@
                   }
                 ]
               },
-              "sonar_price.lane_key": {
+              "market_intel_a_price.lane_key": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "lane_key"
                   }
                 },
@@ -11078,10 +11078,10 @@
                   }
                 ]
               },
-              "sonar_price.mileage": {
+              "market_intel_a_price.mileage": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "mileage"
                   }
                 },
@@ -11194,10 +11194,10 @@
                   }
                 ]
               },
-              "sonar_price.origin": {
+              "market_intel_a_price.origin": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "origin"
                   }
                 },
@@ -11270,10 +11270,10 @@
                   }
                 ]
               },
-              "sonar_price.origin_country": {
+              "market_intel_a_price.origin_country": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "origin_country"
                   }
                 },
@@ -11339,10 +11339,10 @@
                   }
                 ]
               },
-              "sonar_price.prices_key": {
+              "market_intel_a_price.prices_key": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "Prices Key"
                   }
                 },
@@ -11471,10 +11471,10 @@
                   "Value": "Hidden"
                 }
               },
-              "sonar_price.rate_type": {
+              "market_intel_a_price.rate_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "rate_type"
                   }
                 },
@@ -11600,10 +11600,10 @@
                   }
                 ]
               },
-              "sonar_price.week": {
+              "market_intel_a_price.week": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "week"
                   }
                 },
@@ -11619,10 +11619,10 @@
                   "Value": "Hidden"
                 }
               },
-              "sonar_price.year": {
+              "market_intel_a_price.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "year"
                   }
                 },
@@ -11649,10 +11649,10 @@
                   "Value": "Hidden"
                 }
               },
-              "sonar_price.year_week_hierarchy": {
+              "market_intel_a_price.year_week_hierarchy": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "Hierarchy": "Year/Week Hierarchy"
                   }
                 },
@@ -11784,10 +11784,10 @@
                   }
                 ]
               },
-              "sonar_price.year_week_hierarchy.week": {
+              "market_intel_a_price.year_week_hierarchy.week": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "Hierarchy": "Year/Week Hierarchy",
                     "HierarchyLevel": "week"
                   }
@@ -11802,10 +11802,10 @@
                   }
                 ]
               },
-              "sonar_price.year_week_hierarchy.year": {
+              "market_intel_a_price.year_week_hierarchy.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "Hierarchy": "Year/Week Hierarchy",
                     "HierarchyLevel": "year"
                   }
@@ -11830,10 +11830,10 @@
                   }
                 ]
               },
-              "sonar_price.yearweek": {
+              "market_intel_a_price.yearweek": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Prices",
+                    "ConceptualEntity": "Market Intel A Prices",
                     "ConceptualProperty": "year-week"
                   }
                 },
@@ -11872,21 +11872,21 @@
                   }
                 ]
               },
-              "sonar_volume": {
+              "market_intel_a_volume": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes"
+                    "ConceptualEntity": "Market Intel A Volumes"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "sonar volume": {
+                    "market intel a volume": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "sonar capacity": {
+                    "market intel a capacity": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11896,7 +11896,7 @@
                     }
                   },
                   {
-                    "sonar size": {
+                    "market intel a size": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11906,7 +11906,7 @@
                     }
                   },
                   {
-                    "sonar bulk": {
+                    "market intel a bulk": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11916,7 +11916,7 @@
                     }
                   },
                   {
-                    "sonar tome": {
+                    "market intel a tome": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11926,7 +11926,7 @@
                     }
                   },
                   {
-                    "sonar book": {
+                    "market intel a book": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11936,7 +11936,7 @@
                     }
                   },
                   {
-                    "sonar work": {
+                    "market intel a work": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11946,7 +11946,7 @@
                     }
                   },
                   {
-                    "sonar edition": {
+                    "market intel a edition": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
@@ -11957,17 +11957,17 @@
                   }
                 ]
               },
-              "sonar_volume.WSB_sonar": {
+              "market_intel_a_volume.WSB_market_intel_a": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
-                    "ConceptualProperty": "WSB (Sonar)"
+                    "ConceptualEntity": "Market Intel A Volumes",
+                    "ConceptualProperty": "WSB (Market Intel A)"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "WSB (sonar)": {
+                    "WSB (market intel a)": {
                       "State": "Generated"
                     }
                   },
@@ -11979,10 +11979,10 @@
                   }
                 ]
               },
-              "sonar_volume.destiny": {
+              "market_intel_a_volume.destiny": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "destiny"
                   }
                 },
@@ -12095,10 +12095,10 @@
                   }
                 ]
               },
-              "sonar_volume.destiny_country": {
+              "market_intel_a_volume.destiny_country": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "destiny_country"
                   }
                 },
@@ -12164,10 +12164,10 @@
                   }
                 ]
               },
-              "sonar_volume.equip_type": {
+              "market_intel_a_volume.equip_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "equip_type"
                   }
                 },
@@ -12287,10 +12287,10 @@
                   }
                 ]
               },
-              "sonar_volume.lane_key": {
+              "market_intel_a_volume.lane_key": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "lane_key"
                   }
                 },
@@ -12416,10 +12416,10 @@
                   }
                 ]
               },
-              "sonar_volume.origin": {
+              "market_intel_a_volume.origin": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "origin"
                   }
                 },
@@ -12492,10 +12492,10 @@
                   }
                 ]
               },
-              "sonar_volume.origin_country": {
+              "market_intel_a_volume.origin_country": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "origin_country"
                   }
                 },
@@ -12561,10 +12561,10 @@
                   }
                 ]
               },
-              "sonar_volume.rate_type": {
+              "market_intel_a_volume.rate_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "rate_type"
                   }
                 },
@@ -12690,10 +12690,10 @@
                   }
                 ]
               },
-              "sonar_volume.sonar_key": {
+              "market_intel_a_volume.market_intel_a_key": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "Volumes Key"
                   }
                 },
@@ -12822,10 +12822,10 @@
                   "Value": "Hidden"
                 }
               },
-              "sonar_volume.volume": {
+              "market_intel_a_volume.volume": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Sonar Volumes",
+                    "ConceptualEntity": "Market Intel A Volumes",
                     "ConceptualProperty": "volume"
                   }
                 },
@@ -12891,265 +12891,265 @@
             },
             "Language": "en-US",
             "Relationships": {
-              "DAT_volume_has_dat_volumes_volumes": {
+              "market_intel_b_volume_has_market_intel_b_volumes_volumes": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "dat_volumes.volumes"
+                        "Role": "market_intel_b_volumes.volumes"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_volumes",
+                    "ID": "market_intel_b_volumes_have_volumes",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "dat_volumes.volumes": {
+                  "market_intel_b_volumes.volumes": {
                     "Target": {
-                      "Entity": "dat_volumes.volumes"
+                      "Entity": "market_intel_b_volumes.volumes"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_dmast_kma": {
+              "market_intel_b_volume_has_dmast_kma": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.dmast_kma"
+                        "Role": "market_intel_b_volume.dmast_kma"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_dmast_kmas",
+                    "ID": "market_intel_b_volumes_have_dmast_kmas",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.dmast_kma": {
+                  "market_intel_b_volume.dmast_kma": {
                     "Target": {
-                      "Entity": "DAT_volume.dmast_kma"
+                      "Entity": "market_intel_b_volume.dmast_kma"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_equip_type": {
+              "market_intel_b_volume_has_equip_type": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.equip_type"
+                        "Role": "market_intel_b_volume.equip_type"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_equip_type",
+                    "ID": "market_intel_b_volumes_have_equip_type",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.equip_type": {
+                  "market_intel_b_volume.equip_type": {
                     "Target": {
-                      "Entity": "DAT_volume.equip_type"
+                      "Entity": "market_intel_b_volume.equip_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_omast_kma": {
+              "market_intel_b_volume_has_omast_kma": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.omast_kma"
+                        "Role": "market_intel_b_volume.omast_kma"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_omast_kmas",
+                    "ID": "market_intel_b_volumes_have_omast_kmas",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.omast_kma": {
+                  "market_intel_b_volume.omast_kma": {
                     "Target": {
-                      "Entity": "DAT_volume.omast_kma"
+                      "Entity": "market_intel_b_volume.omast_kma"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_rate_type": {
+              "market_intel_b_volume_has_rate_type": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.rate_type"
+                        "Role": "market_intel_b_volume.rate_type"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_rate_types",
+                    "ID": "market_intel_b_volumes_have_rate_types",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.rate_type": {
+                  "market_intel_b_volume.rate_type": {
                     "Target": {
-                      "Entity": "DAT_volume.rate_type"
+                      "Entity": "market_intel_b_volume.rate_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_shipper": {
+              "market_intel_b_volume_has_shipper": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.shipper"
+                        "Role": "market_intel_b_volume.shipper"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_shippers",
+                    "ID": "market_intel_b_volumes_have_shippers",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.shipper": {
+                  "market_intel_b_volume.shipper": {
                     "Target": {
-                      "Entity": "DAT_volume.shipper"
+                      "Entity": "market_intel_b_volume.shipper"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_volumes_key": {
+              "market_intel_b_volume_has_volumes_key": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.volumes_key"
+                        "Role": "market_intel_b_volume.volumes_key"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_volumes_keys",
+                    "ID": "market_intel_b_volumes_have_volumes_keys",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.volumes_key": {
+                  "market_intel_b_volume.volumes_key": {
                     "Target": {
-                      "Entity": "DAT_volume.volumes_key"
+                      "Entity": "market_intel_b_volume.volumes_key"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "DAT_volume_has_wsb_dat": {
+              "market_intel_b_volume_has_wsb_market_intel_b": {
                 "Binding": {
-                  "ConceptualEntity": "DAT Volumes"
+                  "ConceptualEntity": "Market Intel B Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume.wsb_dat"
+                        "Role": "market_intel_b_volume.wsb_market_intel_b"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_wsb_dat",
+                    "ID": "market_intel_b_volumes_have_wsb_market_intel_b",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
-                  "DAT_volume.wsb_dat": {
+                  "market_intel_b_volume.wsb_market_intel_b": {
                     "Target": {
-                      "Entity": "DAT_volume.wsb_dat"
+                      "Entity": "market_intel_b_volume.wsb_market_intel_b"
                     }
                   }
                 },
@@ -15003,7 +15003,7 @@
                 },
                 "State": "Generated"
               },
-              "dim_loads_cluster_has_WSB_sonar": {
+              "dim_loads_cluster_has_WSB_market_intel_a": {
                 "Binding": {
                   "ConceptualEntity": "dim_loads_clusters"
                 },
@@ -15011,13 +15011,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "dim_loads_cluster.WSB_sonar"
+                        "Role": "dim_loads_cluster.WSB_market_intel_a"
                       },
                       "Subject": {
                         "Role": "dim_loads_cluster"
                       }
                     },
-                    "ID": "dim_loads_clusters_have_WSB_sonar",
+                    "ID": "dim_loads_clusters_have_WSB_market_intel_a",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15028,9 +15028,9 @@
                       "Entity": "dim_loads_cluster"
                     }
                   },
-                  "dim_loads_cluster.WSB_sonar": {
+                  "dim_loads_cluster.WSB_market_intel_a": {
                     "Target": {
-                      "Entity": "dim_loads_cluster.WSB_sonar"
+                      "Entity": "dim_loads_cluster.WSB_market_intel_a"
                     }
                   }
                 },
@@ -15102,7 +15102,7 @@
                 },
                 "State": "Generated"
               },
-              "dim_loads_cluster_has_market_position_DAT": {
+              "dim_loads_cluster_has_market_position_market_intel_b": {
                 "Binding": {
                   "ConceptualEntity": "dim_loads_clusters"
                 },
@@ -15110,13 +15110,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "dim_loads_cluster.market_position_DAT"
+                        "Role": "dim_loads_cluster.market_position_market_intel_b"
                       },
                       "Subject": {
                         "Role": "dim_loads_cluster"
                       }
                     },
-                    "ID": "dim_loads_clusters_have_market_position_DAT",
+                    "ID": "dim_loads_clusters_have_market_position_market_intel_b",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15127,9 +15127,9 @@
                       "Entity": "dim_loads_cluster"
                     }
                   },
-                  "dim_loads_cluster.market_position_DAT": {
+                  "dim_loads_cluster.market_position_market_intel_b": {
                     "Target": {
-                      "Entity": "dim_loads_cluster.market_position_DAT"
+                      "Entity": "dim_loads_cluster.market_position_market_intel_b"
                     }
                   }
                 },
@@ -15168,7 +15168,7 @@
                 },
                 "State": "Generated"
               },
-              "dim_loads_cluster_has_wsb_dat": {
+              "dim_loads_cluster_has_wsb_market_intel_b": {
                 "Binding": {
                   "ConceptualEntity": "dim_loads_clusters"
                 },
@@ -15176,13 +15176,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "dim_loads_cluster.wsb_dat"
+                        "Role": "dim_loads_cluster.wsb_market_intel_b"
                       },
                       "Subject": {
                         "Role": "dim_loads_cluster"
                       }
                     },
-                    "ID": "dim_loads_clusters_have_wsb_dat",
+                    "ID": "dim_loads_clusters_have_wsb_market_intel_b",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15193,9 +15193,9 @@
                       "Entity": "dim_loads_cluster"
                     }
                   },
-                  "dim_loads_cluster.wsb_dat": {
+                  "dim_loads_cluster.wsb_market_intel_b": {
                     "Target": {
-                      "Entity": "dim_loads_cluster.wsb_dat"
+                      "Entity": "dim_loads_cluster.wsb_market_intel_b"
                     }
                   }
                 },
@@ -15234,7 +15234,7 @@
                 },
                 "State": "Generated"
               },
-              "lane_set_has_DAT_volume": {
+              "lane_set_has_market_intel_b_volume": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -15242,13 +15242,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_DAT_volumes",
+                    "ID": "loads_main_set_have_market_intel_b_volumes",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -15258,18 +15258,18 @@
                         "Role": "lane_set"
                       },
                       "Subject": {
-                        "Role": "DAT_volume"
+                        "Role": "market_intel_b_volume"
                       }
                     },
-                    "ID": "DAT_volumes_have_loads_main_set",
+                    "ID": "market_intel_b_volumes_have_loads_main_set",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "DAT_volume": {
+                  "market_intel_b_volume": {
                     "Target": {
-                      "Entity": "DAT_volume"
+                      "Entity": "market_intel_b_volume"
                     }
                   },
                   "lane_set": {
@@ -15604,7 +15604,7 @@
                 },
                 "State": "Generated"
               },
-              "lane_set_has_dat_p75": {
+              "lane_set_has_market_intel_b_p75": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -15612,13 +15612,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.dat_p75"
+                        "Role": "lane_set.market_intel_b_p75"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_dat_p75",
+                    "ID": "loads_main_set_have_market_intel_b_p75",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15629,15 +15629,15 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.dat_p75": {
+                  "lane_set.market_intel_b_p75": {
                     "Target": {
-                      "Entity": "lane_set.dat_p75"
+                      "Entity": "lane_set.market_intel_b_p75"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "lane_set_has_dat_p90": {
+              "lane_set_has_market_intel_b_p90": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -15645,13 +15645,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.dat_p90"
+                        "Role": "lane_set.market_intel_b_p90"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_dat_p90",
+                    "ID": "loads_main_set_have_market_intel_b_p90",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15662,9 +15662,9 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.dat_p90": {
+                  "lane_set.market_intel_b_p90": {
                     "Target": {
-                      "Entity": "lane_set.dat_p90"
+                      "Entity": "lane_set.market_intel_b_p90"
                     }
                   }
                 },
@@ -16251,7 +16251,7 @@
                 },
                 "State": "Generated"
               },
-              "lane_set_has_market_position_DAT": {
+              "lane_set_has_market_position_market_intel_b": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -16259,13 +16259,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.market_position_DAT"
+                        "Role": "lane_set.market_position_market_intel_b"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_market_position_DAT",
+                    "ID": "loads_main_set_have_market_position_market_intel_b",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16276,9 +16276,9 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.market_position_DAT": {
+                  "lane_set.market_position_market_intel_b": {
                     "Target": {
-                      "Entity": "lane_set.market_position_DAT"
+                      "Entity": "lane_set.market_position_market_intel_b"
                     }
                   }
                 },
@@ -16693,7 +16693,7 @@
                 },
                 "State": "Generated"
               },
-              "lane_set_has_sonar_P98": {
+              "lane_set_has_market_intel_a_P98": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -16701,13 +16701,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.sonar_P98"
+                        "Role": "lane_set.market_intel_a_P98"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_sonar_P98",
+                    "ID": "loads_main_set_have_market_intel_a_P98",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16718,15 +16718,15 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.sonar_P98": {
+                  "lane_set.market_intel_a_P98": {
                     "Target": {
-                      "Entity": "lane_set.sonar_P98"
+                      "Entity": "lane_set.market_intel_a_P98"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "lane_set_has_sonar_P99": {
+              "lane_set_has_market_intel_a_P99": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -16734,13 +16734,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.sonar_P99"
+                        "Role": "lane_set.market_intel_a_P99"
                       },
                       "Subject": {
                         "Role": "lane_set"
                       }
                     },
-                    "ID": "loads_main_set_have_sonar_P99",
+                    "ID": "loads_main_set_have_market_intel_a_P99",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16751,15 +16751,15 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.sonar_P99": {
+                  "lane_set.market_intel_a_P99": {
                     "Target": {
-                      "Entity": "lane_set.sonar_P99"
+                      "Entity": "lane_set.market_intel_a_P99"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "lane_set_has_sonar_key": {
+              "lane_set_has_market_intel_a_key": {
                 "Binding": {
                   "ConceptualEntity": "Loads (Main Set)"
                 },
@@ -16767,7 +16767,7 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "lane_set.sonar_key"
+                        "Role": "lane_set.market_intel_a_key"
                       },
                       "Subject": {
                         "Role": "lane_set"
@@ -16784,9 +16784,9 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "lane_set.sonar_key": {
+                  "lane_set.market_intel_a_key": {
                     "Target": {
-                      "Entity": "lane_set.sonar_key"
+                      "Entity": "lane_set.market_intel_a_key"
                     }
                   }
                 },
@@ -17503,207 +17503,207 @@
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_RPM_sonar": {
+              "market_intel_a_price_has_RPM_market_intel_a": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.RPM_sonar"
+                        "Role": "market_intel_a_price.RPM_market_intel_a"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_RPM_sonar",
+                    "ID": "market_intel_a_prices_have_RPM_market_intel_a",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.RPM_sonar": {
+                  "market_intel_a_price.RPM_market_intel_a": {
                     "Target": {
-                      "Entity": "sonar_price.RPM_sonar"
+                      "Entity": "market_intel_a_price.RPM_market_intel_a"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_avg_rate": {
+              "market_intel_a_price_has_avg_rate": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.avg_rate"
+                        "Role": "market_intel_a_price.avg_rate"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_avg_rates",
+                    "ID": "market_intel_a_prices_have_avg_rates",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.avg_rate": {
+                  "market_intel_a_price.avg_rate": {
                     "Target": {
-                      "Entity": "sonar_price.avg_rate"
+                      "Entity": "market_intel_a_price.avg_rate"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_destiny": {
+              "market_intel_a_price_has_destiny": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.destiny"
+                        "Role": "market_intel_a_price.destiny"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_destinies",
+                    "ID": "market_intel_a_prices_have_destinies",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.destiny": {
+                  "market_intel_a_price.destiny": {
                     "Target": {
-                      "Entity": "sonar_price.destiny"
+                      "Entity": "market_intel_a_price.destiny"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_destiny_country": {
+              "market_intel_a_price_has_destiny_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.destiny_country"
+                        "Role": "market_intel_a_price.destiny_country"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_destiny_countries",
+                    "ID": "market_intel_a_prices_have_destiny_countries",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.destiny_country": {
+                  "market_intel_a_price.destiny_country": {
                     "Target": {
-                      "Entity": "sonar_price.destiny_country"
+                      "Entity": "market_intel_a_price.destiny_country"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_equip_type": {
+              "market_intel_a_price_has_equip_type": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.equip_type"
+                        "Role": "market_intel_a_price.equip_type"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_equip_type",
+                    "ID": "market_intel_a_prices_have_equip_type",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.equip_type": {
+                  "market_intel_a_price.equip_type": {
                     "Target": {
-                      "Entity": "sonar_price.equip_type"
+                      "Entity": "market_intel_a_price.equip_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_lane_key": {
+              "market_intel_a_price_has_lane_key": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.lane_key"
+                        "Role": "market_intel_a_price.lane_key"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_lane_keys",
+                    "ID": "market_intel_a_prices_have_lane_keys",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.lane_key": {
+                  "market_intel_a_price.lane_key": {
                     "Target": {
-                      "Entity": "sonar_price.lane_key"
+                      "Entity": "market_intel_a_price.lane_key"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_lane_set": {
+              "market_intel_a_price_has_lane_set": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
@@ -17712,10 +17712,10 @@
                         "Role": "lane_set"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_loads_main_set",
+                    "ID": "market_intel_a_prices_have_loads_main_set",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17726,222 +17726,222 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_mileage": {
+              "market_intel_a_price_has_mileage": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.mileage"
+                        "Role": "market_intel_a_price.mileage"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_mileages",
+                    "ID": "market_intel_a_prices_have_mileages",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.mileage": {
+                  "market_intel_a_price.mileage": {
                     "Target": {
-                      "Entity": "sonar_price.mileage"
+                      "Entity": "market_intel_a_price.mileage"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_origin": {
+              "market_intel_a_price_has_origin": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.origin"
+                        "Role": "market_intel_a_price.origin"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_origins",
+                    "ID": "market_intel_a_prices_have_origins",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.origin": {
+                  "market_intel_a_price.origin": {
                     "Target": {
-                      "Entity": "sonar_price.origin"
+                      "Entity": "market_intel_a_price.origin"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_origin_country": {
+              "market_intel_a_price_has_origin_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.origin_country"
+                        "Role": "market_intel_a_price.origin_country"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_origin_countries",
+                    "ID": "market_intel_a_prices_have_origin_countries",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.origin_country": {
+                  "market_intel_a_price.origin_country": {
                     "Target": {
-                      "Entity": "sonar_price.origin_country"
+                      "Entity": "market_intel_a_price.origin_country"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_rate_type": {
+              "market_intel_a_price_has_rate_type": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.rate_type"
+                        "Role": "market_intel_a_price.rate_type"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_rate_types",
+                    "ID": "market_intel_a_prices_have_rate_types",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.rate_type": {
+                  "market_intel_a_price.rate_type": {
                     "Target": {
-                      "Entity": "sonar_price.rate_type"
+                      "Entity": "market_intel_a_price.rate_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_year_week_hierarchy": {
+              "market_intel_a_price_has_year_week_hierarchy": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.year_week_hierarchy"
+                        "Role": "market_intel_a_price.year_week_hierarchy"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_year_week_hierarchies",
+                    "ID": "market_intel_a_prices_have_year_week_hierarchies",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.year_week_hierarchy": {
+                  "market_intel_a_price.year_week_hierarchy": {
                     "Target": {
-                      "Entity": "sonar_price.year_week_hierarchy"
+                      "Entity": "market_intel_a_price.year_week_hierarchy"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_has_yearweek": {
+              "market_intel_a_price_has_yearweek": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.yearweek"
+                        "Role": "market_intel_a_price.yearweek"
                       },
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
-                    "ID": "sonar_prices_have_yearweeks",
+                    "ID": "market_intel_a_prices_have_yearweeks",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.yearweek": {
+                  "market_intel_a_price.yearweek": {
                     "Target": {
-                      "Entity": "sonar_price.yearweek"
+                      "Entity": "market_intel_a_price.yearweek"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_in_destiny_country": {
+              "market_intel_a_price_in_destiny_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
-                    "ID": "sonar_prices_are_in_destiny_countries",
+                    "ID": "market_intel_a_prices_are_in_destiny_countries",
                     "Preposition": {
                       "Object": {
-                        "Role": "sonar_price.destiny_country"
+                        "Role": "market_intel_a_price.destiny_country"
                       },
                       "Prepositions": [
                         {
@@ -17951,7 +17951,7 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
                     "State": "Generated",
@@ -17959,34 +17959,34 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.destiny_country": {
+                  "market_intel_a_price.destiny_country": {
                     "Target": {
-                      "Entity": "sonar_price.destiny_country"
+                      "Entity": "market_intel_a_price.destiny_country"
                     }
                   }
                 },
                 "SemanticSlots": {
                   "Where": {
-                    "Role": "sonar_price.destiny_country"
+                    "Role": "market_intel_a_price.destiny_country"
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_in_origin_country": {
+              "market_intel_a_price_in_origin_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
-                    "ID": "sonar_prices_are_in_origin_countries",
+                    "ID": "market_intel_a_prices_are_in_origin_countries",
                     "Preposition": {
                       "Object": {
-                        "Role": "sonar_price.origin_country"
+                        "Role": "market_intel_a_price.origin_country"
                       },
                       "Prepositions": [
                         {
@@ -17996,7 +17996,7 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "sonar_price"
+                        "Role": "market_intel_a_price"
                       }
                     },
                     "State": "Generated",
@@ -18004,36 +18004,36 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_price": {
+                  "market_intel_a_price": {
                     "Target": {
-                      "Entity": "sonar_price"
+                      "Entity": "market_intel_a_price"
                     }
                   },
-                  "sonar_price.origin_country": {
+                  "market_intel_a_price.origin_country": {
                     "Target": {
-                      "Entity": "sonar_price.origin_country"
+                      "Entity": "market_intel_a_price.origin_country"
                     }
                   }
                 },
                 "SemanticSlots": {
                   "Where": {
-                    "Role": "sonar_price.origin_country"
+                    "Role": "market_intel_a_price.origin_country"
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_year_week_hierarchy_has_week": {
+              "market_intel_a_price_year_week_hierarchy_has_week": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.year_week_hierarchy.week"
+                        "Role": "market_intel_a_price.year_week_hierarchy.week"
                       },
                       "Subject": {
-                        "Role": "sonar_price.year_week_hierarchy"
+                        "Role": "market_intel_a_price.year_week_hierarchy"
                       }
                     },
                     "ID": "year_week_hierarchies_have_weeks",
@@ -18042,31 +18042,31 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_price.year_week_hierarchy": {
+                  "market_intel_a_price.year_week_hierarchy": {
                     "Target": {
-                      "Entity": "sonar_price.year_week_hierarchy"
+                      "Entity": "market_intel_a_price.year_week_hierarchy"
                     }
                   },
-                  "sonar_price.year_week_hierarchy.week": {
+                  "market_intel_a_price.year_week_hierarchy.week": {
                     "Target": {
-                      "Entity": "sonar_price.year_week_hierarchy.week"
+                      "Entity": "market_intel_a_price.year_week_hierarchy.week"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_price_year_week_hierarchy_has_year": {
+              "market_intel_a_price_year_week_hierarchy_has_year": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Prices"
+                  "ConceptualEntity": "Market Intel A Prices"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_price.year_week_hierarchy.year"
+                        "Role": "market_intel_a_price.year_week_hierarchy.year"
                       },
                       "Subject": {
-                        "Role": "sonar_price.year_week_hierarchy"
+                        "Role": "market_intel_a_price.year_week_hierarchy"
                       }
                     },
                     "ID": "year_week_hierarchies_have_years",
@@ -18075,187 +18075,187 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_price.year_week_hierarchy": {
+                  "market_intel_a_price.year_week_hierarchy": {
                     "Target": {
-                      "Entity": "sonar_price.year_week_hierarchy"
+                      "Entity": "market_intel_a_price.year_week_hierarchy"
                     }
                   },
-                  "sonar_price.year_week_hierarchy.year": {
+                  "market_intel_a_price.year_week_hierarchy.year": {
                     "Target": {
-                      "Entity": "sonar_price.year_week_hierarchy.year"
+                      "Entity": "market_intel_a_price.year_week_hierarchy.year"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_WSB_sonar": {
+              "market_intel_a_volume_has_WSB_market_intel_a": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.WSB_sonar"
+                        "Role": "market_intel_a_volume.WSB_market_intel_a"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_WSB_sonar",
+                    "ID": "market_intel_a_volumes_have_WSB_market_intel_a",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.WSB_sonar": {
+                  "market_intel_a_volume.WSB_market_intel_a": {
                     "Target": {
-                      "Entity": "sonar_volume.WSB_sonar"
+                      "Entity": "market_intel_a_volume.WSB_market_intel_a"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_destiny": {
+              "market_intel_a_volume_has_destiny": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.destiny"
+                        "Role": "market_intel_a_volume.destiny"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_destinies",
+                    "ID": "market_intel_a_volumes_have_destinies",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.destiny": {
+                  "market_intel_a_volume.destiny": {
                     "Target": {
-                      "Entity": "sonar_volume.destiny"
+                      "Entity": "market_intel_a_volume.destiny"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_destiny_country": {
+              "market_intel_a_volume_has_destiny_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.destiny_country"
+                        "Role": "market_intel_a_volume.destiny_country"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_destiny_countries",
+                    "ID": "market_intel_a_volumes_have_destiny_countries",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.destiny_country": {
+                  "market_intel_a_volume.destiny_country": {
                     "Target": {
-                      "Entity": "sonar_volume.destiny_country"
+                      "Entity": "market_intel_a_volume.destiny_country"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_equip_type": {
+              "market_intel_a_volume_has_equip_type": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.equip_type"
+                        "Role": "market_intel_a_volume.equip_type"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_equip_type",
+                    "ID": "market_intel_a_volumes_have_equip_type",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.equip_type": {
+                  "market_intel_a_volume.equip_type": {
                     "Target": {
-                      "Entity": "sonar_volume.equip_type"
+                      "Entity": "market_intel_a_volume.equip_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_lane_key": {
+              "market_intel_a_volume_has_lane_key": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.lane_key"
+                        "Role": "market_intel_a_volume.lane_key"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_lane_keys",
+                    "ID": "market_intel_a_volumes_have_lane_keys",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.lane_key": {
+                  "market_intel_a_volume.lane_key": {
                     "Target": {
-                      "Entity": "sonar_volume.lane_key"
+                      "Entity": "market_intel_a_volume.lane_key"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_lane_set": {
+              "market_intel_a_volume_has_lane_set": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
@@ -18264,10 +18264,10 @@
                         "Role": "lane_set"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_loads_main_set",
+                    "ID": "market_intel_a_volumes_have_loads_main_set",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18278,156 +18278,156 @@
                       "Entity": "lane_set"
                     }
                   },
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_origin": {
+              "market_intel_a_volume_has_origin": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.origin"
+                        "Role": "market_intel_a_volume.origin"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_origins",
+                    "ID": "market_intel_a_volumes_have_origins",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.origin": {
+                  "market_intel_a_volume.origin": {
                     "Target": {
-                      "Entity": "sonar_volume.origin"
+                      "Entity": "market_intel_a_volume.origin"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_origin_country": {
+              "market_intel_a_volume_has_origin_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.origin_country"
+                        "Role": "market_intel_a_volume.origin_country"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_origin_countries",
+                    "ID": "market_intel_a_volumes_have_origin_countries",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.origin_country": {
+                  "market_intel_a_volume.origin_country": {
                     "Target": {
-                      "Entity": "sonar_volume.origin_country"
+                      "Entity": "market_intel_a_volume.origin_country"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_rate_type": {
+              "market_intel_a_volume_has_rate_type": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.rate_type"
+                        "Role": "market_intel_a_volume.rate_type"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_rate_types",
+                    "ID": "market_intel_a_volumes_have_rate_types",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.rate_type": {
+                  "market_intel_a_volume.rate_type": {
                     "Target": {
-                      "Entity": "sonar_volume.rate_type"
+                      "Entity": "market_intel_a_volume.rate_type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_has_volume": {
+              "market_intel_a_volume_has_volume": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "sonar_volume.volume"
+                        "Role": "market_intel_a_volume.volume"
                       },
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
-                    "ID": "sonar_volumes_have_volumes",
+                    "ID": "market_intel_a_volumes_have_volumes",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.volume": {
+                  "market_intel_a_volume.volume": {
                     "Target": {
-                      "Entity": "sonar_volume.volume"
+                      "Entity": "market_intel_a_volume.volume"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_in_destiny_country": {
+              "market_intel_a_volume_in_destiny_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
-                    "ID": "sonar_volumes_are_in_destiny_countries",
+                    "ID": "market_intel_a_volumes_are_in_destiny_countries",
                     "Preposition": {
                       "Object": {
-                        "Role": "sonar_volume.destiny_country"
+                        "Role": "market_intel_a_volume.destiny_country"
                       },
                       "Prepositions": [
                         {
@@ -18437,7 +18437,7 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
                     "State": "Generated",
@@ -18445,34 +18445,34 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.destiny_country": {
+                  "market_intel_a_volume.destiny_country": {
                     "Target": {
-                      "Entity": "sonar_volume.destiny_country"
+                      "Entity": "market_intel_a_volume.destiny_country"
                     }
                   }
                 },
                 "SemanticSlots": {
                   "Where": {
-                    "Role": "sonar_volume.destiny_country"
+                    "Role": "market_intel_a_volume.destiny_country"
                   }
                 },
                 "State": "Generated"
               },
-              "sonar_volume_in_origin_country": {
+              "market_intel_a_volume_in_origin_country": {
                 "Binding": {
-                  "ConceptualEntity": "Sonar Volumes"
+                  "ConceptualEntity": "Market Intel A Volumes"
                 },
                 "Phrasings": [
                   {
-                    "ID": "sonar_volumes_are_in_origin_countries",
+                    "ID": "market_intel_a_volumes_are_in_origin_countries",
                     "Preposition": {
                       "Object": {
-                        "Role": "sonar_volume.origin_country"
+                        "Role": "market_intel_a_volume.origin_country"
                       },
                       "Prepositions": [
                         {
@@ -18482,7 +18482,7 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "sonar_volume"
+                        "Role": "market_intel_a_volume"
                       }
                     },
                     "State": "Generated",
@@ -18490,20 +18490,20 @@
                   }
                 ],
                 "Roles": {
-                  "sonar_volume": {
+                  "market_intel_a_volume": {
                     "Target": {
-                      "Entity": "sonar_volume"
+                      "Entity": "market_intel_a_volume"
                     }
                   },
-                  "sonar_volume.origin_country": {
+                  "market_intel_a_volume.origin_country": {
                     "Target": {
-                      "Entity": "sonar_volume.origin_country"
+                      "Entity": "market_intel_a_volume.origin_country"
                     }
                   }
                 },
                 "SemanticSlots": {
                   "Where": {
-                    "Role": "sonar_volume.origin_country"
+                    "Role": "market_intel_a_volume.origin_country"
                   }
                 },
                 "State": "Generated"
@@ -18557,7 +18557,7 @@
             "value": "3"
           }
         ],
-        "folder": "Sonar"
+        "folder": "Market Intel A"
       },
       {
         "annotations": [
@@ -18575,7 +18575,7 @@
             "value": "3"
           }
         ],
-        "folder": "DAT"
+        "folder": "Market Intel B"
       }
     ],
     "relationships": [
@@ -18624,7 +18624,7 @@
         "name": "f3204aa5-309e-42fd-66a5-bbed164d9f82",
         "crossFilteringBehavior": "bothDirections",
         "fromColumn": "Prices Key",
-        "fromTable": "Sonar Prices",
+        "fromTable": "Market Intel A Prices",
         "toCardinality": "many",
         "toColumn": "Prices Key",
         "toTable": "Loads (Main Set)"
@@ -18633,7 +18633,7 @@
         "name": "2cb2a454-992c-74a7-d847-238d1bc8be0d",
         "crossFilteringBehavior": "bothDirections",
         "fromColumn": "Volumes Key",
-        "fromTable": "Sonar Volumes",
+        "fromTable": "Market Intel A Volumes",
         "toCardinality": "many",
         "toColumn": "Volumes Key",
         "toTable": "Loads (Main Set)"
@@ -18658,7 +18658,7 @@
         "fromColumn": "Volumes Key",
         "fromTable": "Loads (Main Set)",
         "toColumn": "Volumes Key",
-        "toTable": "DAT Volumes"
+        "toTable": "Market Intel B Volumes"
       },
       {
         "name": "1cd1730c-1265-4dc1-76ab-9140ba2b814b",
@@ -19660,7 +19660,7 @@
             "lineageTag": "0809dadf-cfe7-4b68-aa18-3b0492efd2a6"
           },
           {
-            "name": "Sonar P99",
+            "name": "Market Intel A P99",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19668,7 +19668,7 @@
               }
             ],
             "displayFolder": "Auxiliary Metrics",
-            "expression": "CALCULATE(PERCENTILE.INC('Sonar Volumes'[volume],.99),ALL('Loads (Main Set)'))",
+            "expression": "CALCULATE(PERCENTILE.INC('Market Intel A Volumes'[volume],.99),ALL('Loads (Main Set)'))",
             "lineageTag": "f8a19546-556f-4f15-b1a2-dbaf67bfafef"
           },
           {
@@ -19677,7 +19677,7 @@
             "expression": [
               "",
               "VAR WSB_LS = SWITCH([WSB]        ,\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
-              "VAR WSB_S  = SWITCH([WSB (Sonar)],\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
+              "VAR WSB_S  = SWITCH([WSB (Market Intel A)],\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
               "RETURN",
               "IF(ISBLANK(WSB_LS) && NOT(ISBLANK(WSB_S)),\"Not participating\",",
               "IF(ISBLANK(WSB_S) && NOT(ISBLANK(WSB_LS)),BLANK(),",
@@ -19688,7 +19688,7 @@
             "lineageTag": "6bd6df9a-b82c-4ff5-ac0f-30cf928b8e62"
           },
           {
-            "name": "Sonar P98",
+            "name": "Market Intel A P98",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19696,16 +19696,16 @@
               }
             ],
             "displayFolder": "Auxiliary Metrics",
-            "expression": "CALCULATE(PERCENTILE.INC('Sonar Volumes'[volume],.975),ALL('Loads (Main Set)'))",
+            "expression": "CALCULATE(PERCENTILE.INC('Market Intel A Volumes'[volume],.975),ALL('Loads (Main Set)'))",
             "lineageTag": "cddd6b4b-29f1-4a76-9a07-2ac46865e199"
           },
           {
-            "name": "Market Position (DAT)",
+            "name": "Market Position (Market Intel B)",
             "displayFolder": "WSB",
             "expression": [
               "",
               "VAR WSB_LS = SWITCH([WSB]      ,\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
-              "VAR WSB_S  = SWITCH([WSB (DAT)],\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
+              "VAR WSB_S  = SWITCH([WSB (Market Intel B)],\"WINDOW\",3,\"SHADOW\",2,\"BLIND\",1,BLANK())",
               "RETURN",
               "IF(ISBLANK(WSB_S),BLANK(),",
               "IF(ISBLANK(WSB_LS) && NOT(ISBLANK(WSB_S)),\"Not participating\",",
@@ -19717,7 +19717,7 @@
             "lineageTag": "3ba91fd8-b900-4114-9fdd-9e1427cf9d1f"
           },
           {
-            "name": "DAT P75",
+            "name": "Market Intel B P75",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19725,11 +19725,11 @@
               }
             ],
             "displayFolder": "Auxiliary Metrics",
-            "expression": "CALCULATE(PERCENTILE.INC('DAT Volumes'[volumes],.75),ALL('Loads (Main Set)'))",
+            "expression": "CALCULATE(PERCENTILE.INC('Market Intel B Volumes'[volumes],.75),ALL('Loads (Main Set)'))",
             "lineageTag": "ac45fa82-98c3-490c-a154-5f32a8681d66"
           },
           {
-            "name": "DAT P90",
+            "name": "Market Intel B P90",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19737,7 +19737,7 @@
               }
             ],
             "displayFolder": "Auxiliary Metrics",
-            "expression": "CALCULATE(PERCENTILE.INC('DAT Volumes'[shippers],.9),ALL('Loads (Main Set)'))",
+            "expression": "CALCULATE(PERCENTILE.INC('Market Intel B Volumes'[shippers],.9),ALL('Loads (Main Set)'))",
             "lineageTag": "c6aa44d4-61a4-4cfe-a714-96f4e5b878c1"
           }
         ],
@@ -21101,7 +21101,7 @@
         ]
       },
       {
-        "name": "Sonar Volumes",
+        "name": "Market Intel A Volumes",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -21246,15 +21246,15 @@
         "lineageTag": "d88772d5-1389-41e6-bd4f-8000b8126e81",
         "measures": [
           {
-            "name": "WSB (Sonar)",
+            "name": "WSB (Market Intel A)",
             "displayFolder": "WSB",
             "expression": [
               "",
-              "IF(DISTINCTCOUNT('Loads (Main Set)'[lane_kma])>1 || ISBLANK(SUM('Sonar Volumes'[volume])),",
+              "IF(DISTINCTCOUNT('Loads (Main Set)'[lane_kma])>1 || ISBLANK(SUM('Market Intel A Volumes'[volume])),",
               "    BLANK(),",
-              "    IF(SUM('Sonar Volumes'[volume])>[Sonar P99],",
+              "    IF(SUM('Market Intel A Volumes'[volume])>[Market Intel A P99],",
               "        \"WINDOW\",",
-              "    IF(SUM('Sonar Volumes'[volume])>[Sonar P98],",
+              "    IF(SUM('Market Intel A Volumes'[volume])>[Market Intel A P98],",
               "        \"SHADOW\",",
               "        \"BLIND\"",
               "    ))",
@@ -21265,13 +21265,13 @@
         ],
         "partitions": [
           {
-            "name": "Sonar Volumes",
+            "name": "Market Intel A Volumes",
             "mode": "import",
-            "queryGroup": "Sonar",
+            "queryGroup": "Market Intel A",
             "source": {
               "expression": [
                 "let",
-                "    Source = Parquet.Document(File.Contents(DataFolder & \"Sonar Volumes.parquet\")),",
+                "    Source = Parquet.Document(File.Contents(DataFolder & \"Market Intel A Volumes.parquet\")),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Source, {{\"lane_key\", type text}, {\"rate_type\", type text}, {\"equip_type\", type text}, {\"origin_country\", type text}, {\"origin\", type text}, {\"destiny_country\", type text}, {\"destiny\", type text}, {\"volume\", Int64.Type}})",
                 "in",
                 "    #\"Changed Type\""
@@ -21282,7 +21282,7 @@
         ]
       },
       {
-        "name": "Sonar Prices",
+        "name": "Market Intel A Prices",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -21532,7 +21532,7 @@
         "lineageTag": "e0ce7668-be30-4573-878c-5ca6e74cd938",
         "measures": [
           {
-            "name": "RPM (Sonar)",
+            "name": "RPM (Market Intel A)",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -21540,19 +21540,19 @@
               }
             ],
             "displayFolder": "RPM",
-            "expression": "DIVIDE(SUM('Sonar Prices'[avg_rate]),SUM('Sonar Prices'[mileage]))",
+            "expression": "DIVIDE(SUM('Market Intel A Prices'[avg_rate]),SUM('Market Intel A Prices'[mileage]))",
             "lineageTag": "19120ae6-5652-4269-a94c-af02e3297207"
           }
         ],
         "partitions": [
           {
-            "name": "Sonar Prices",
+            "name": "Market Intel A Prices",
             "mode": "import",
-            "queryGroup": "Sonar",
+            "queryGroup": "Market Intel A",
             "source": {
               "expression": [
                 "let",
-                "    Source = Parquet.Document(File.Contents(DataFolder & \"Sonar Prices.parquet\")),",
+                "    Source = Parquet.Document(File.Contents(DataFolder & \"Market Intel A Prices.parquet\")),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Source, {{\"year\", Int64.Type}, {\"week\", Int64.Type}, {\"lane_key\", type text}, {\"rate_type\", type text}, {\"mileage\", type number}, {\"avg_rate\", type number}, {\"equip_type\", type text}, {\"origin_country\", type text}, {\"origin\", type text}, {\"destiny_country\", type text}, {\"destiny\", type text}})",
                 "in",
                 "    #\"Changed Type\""
@@ -21606,7 +21606,7 @@
             "type": "calculatedTableColumn"
           },
           {
-            "name": "WSB (Sonar)",
+            "name": "WSB (Market Intel A)",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -21618,7 +21618,7 @@
             "isDataTypeInferred": true,
             "isNameInferred": true,
             "lineageTag": "c3a289bd-cce7-4521-9526-37aba3ee961a",
-            "sourceColumn": "[WSB (Sonar)]",
+            "sourceColumn": "[WSB (Market Intel A)]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
           },
@@ -21657,7 +21657,7 @@
             "type": "calculatedTableColumn"
           },
           {
-            "name": "WSB (DAT)",
+            "name": "WSB (Market Intel B)",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -21669,12 +21669,12 @@
             "isDataTypeInferred": true,
             "isNameInferred": true,
             "lineageTag": "5acee4b9-9f5e-47ce-bb0b-5c6d27c5dfb4",
-            "sourceColumn": "[WSB (DAT)]",
+            "sourceColumn": "[WSB (Market Intel B)]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
           },
           {
-            "name": "Market Position (DAT)",
+            "name": "Market Position (Market Intel B)",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -21686,7 +21686,7 @@
             "isDataTypeInferred": true,
             "isNameInferred": true,
             "lineageTag": "24bac327-bd78-4c0f-9b13-bcd840ebbfa4",
-            "sourceColumn": "[Market Position (DAT)]",
+            "sourceColumn": "[Market Position (Market Intel B)]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
           }
@@ -21701,11 +21701,11 @@
                 "",
                 "ADDCOLUMNS(",
                 "    VALUES('Loads (Main Set)'[Volumes Key]),",
-                "    \"Market Position (DAT)\",[Market Position (DAT)],",
+                "    \"Market Position (Market Intel B)\",[Market Position (Market Intel B)],",
                 "    \"Market Position\",[Market Position],",
                 "    \"Cluster\",[Elasticity Clusters],",
-                "    \"WSB (Sonar)\",[WSB (Sonar)],",
-                "    \"WSB (DAT)\",[WSB (DAT)],",
+                "    \"WSB (Market Intel A)\",[WSB (Market Intel A)],",
+                "    \"WSB (Market Intel B)\",[WSB (Market Intel B)],",
                 "    \"WSB (LS)\",[WSB]",
                 ")"
               ],
@@ -21715,7 +21715,7 @@
         ]
       },
       {
-        "name": "DAT Volumes",
+        "name": "Market Intel B Volumes",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -21839,14 +21839,14 @@
         "lineageTag": "feb3daf9-3dbe-45f2-b7ef-1fd9d08ce64a",
         "measures": [
           {
-            "name": "WSB (DAT)",
+            "name": "WSB (Market Intel B)",
             "displayFolder": "WSB",
             "expression": [
               "",
-              "VAR SV = SUM('DAT Volumes'[shippers])",
-              "VAR VV = SUM('DAT Volumes'[volumes])",
-              "VAR ST = [DAT P90]",
-              "VAR VT = [DAT P75]",
+              "VAR SV = SUM('Market Intel B Volumes'[shippers])",
+              "VAR VV = SUM('Market Intel B Volumes'[volumes])",
+              "VAR ST = [Market Intel B P90]",
+              "VAR VT = [Market Intel B P75]",
               "RETURN",
               "IF(ISBLANK(VV) || DISTINCTCOUNT('Loads (Main Set)'[lane_kma])>1,",
               "    BLANK(),",
@@ -21867,13 +21867,13 @@
         ],
         "partitions": [
           {
-            "name": "DAT Volumes",
+            "name": "Market Intel B Volumes",
             "mode": "import",
-            "queryGroup": "DAT",
+            "queryGroup": "Market Intel B",
             "source": {
               "expression": [
                 "let",
-                "    Source = Parquet.Document(File.Contents(DataFolder & \"DAT Volumes.parquet\")),",
+                "    Source = Parquet.Document(File.Contents(DataFolder & \"Market Intel B Volumes.parquet\")),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(Source, {{\"omast_kma\", type text}, {\"dmast_kma\", type text}, {\"rate_type\", type text}, {\"equip_type\", type text}, {\"shippers\", Int64.Type}, {\"volumes\", Int64.Type}})",
                 "in",
                 "    #\"Changed Type\""

@@ -8,9 +8,9 @@ erDiagram
     dim_carrier       ||--o{ "Loads (Main Set)" : sk_carrier
     dim_lane          ||--o{ Quotes             : sk_lane
     "Loads (Main Set)" ||..o{ Quotes            : "Lane Key / KMA Key (inactive)"
-    "Loads (Main Set)" }o--o{ "Sonar Prices"    : "Prices Key (both)"
-    "Loads (Main Set)" }o--o{ "Sonar Volumes"   : "Volumes Key (both)"
-    "Loads (Main Set)" }o--o{ "DAT Volumes"     : "Volumes Key (both)"
+    "Loads (Main Set)" }o--o{ "Market Intel A Prices"    : "Prices Key (both)"
+    "Loads (Main Set)" }o--o{ "Market Intel A Volumes"   : "Volumes Key (both)"
+    "Loads (Main Set)" }o--o{ "Market Intel B Volumes"     : "Volumes Key (both)"
     "Loads (Main Set)" }o--|| Poisson           : "Volumes Key = lane_kma"
     "Loads (Main Set)" }o--|| dim_loads_clusters : "Volumes Key"
     "Loads (Main Set)" }o--|| dim_lane_activity : "Activity Key"
@@ -24,8 +24,8 @@ The benchmark sources don't share surrogate keys with the brokerage data, so the
 |---|---|---|
 | `Lane Key` | `year-week : lane : equip_type : quoting_method` | Quotes (city-lane conversion) |
 | `KMA Key` | `year-week : lane_kma : equip_type : quoting_method` | Quotes (KMA conversion) |
-| `Prices Key` | `year-week : lane_kma : equip_type` | Sonar Prices |
-| `Volumes Key` | `lane_kma : equip_type` | Sonar Volumes, DAT Volumes, Poisson, dim_loads_clusters |
+| `Prices Key` | `year-week : lane_kma : equip_type` | Market Intel A Prices |
+| `Volumes Key` | `lane_kma : equip_type` | Market Intel A Volumes, Market Intel B Volumes, Poisson, dim_loads_clusters |
 | `Activity Key` | `lane_kma : equip_type : quoting_method` | dim_lane_activity |
 | `Cluster Key` | `shipper_name : equip_type : lane_kma` | the *Cluster Keys* analysis grain |
 
@@ -33,7 +33,7 @@ The benchmark sources don't share surrogate keys with the brokerage data, so the
 
 **Why the Quotes relationships are inactive:** the same table has to be joined at two grains, city lane and KMA lane. Both relationships are kept inactive, and each `# Quotes` measure switches on the one it needs with `USERELATIONSHIP`. This also avoids ambiguous filter paths through `dim_lane`.
 
-**Why the market relationships are bidirectional:** filtering the report by a SONAR/DAT attribute, such as a WSB level, needs to narrow the brokerage's loads, and the reverse is needed as well.
+**Why the market relationships are bidirectional:** filtering the report by a Market Intel A/Market Intel B attribute, such as a WSB level, needs to narrow the brokerage's loads, and the reverse is needed as well.
 
 ## Tables
 
@@ -66,9 +66,9 @@ The benchmark sources don't share surrogate keys with the brokerage data, so the
 
 | Table | Grain | Columns |
 |---|---|---|
-| `Sonar Prices` | week × KMA lane × rate type (`all` / `spot` / `contracted`) | `avg_rate`, `mileage` (confidence score > 7, rate ≥ $300, ≥ 50 rates) |
-| `Sonar Volumes` | KMA lane × rate type | `volume` (number of distinct rates) |
-| `DAT Volumes` | KMA lane × equipment (spot) | `volumes` (moves), `shippers` (contributor count) |
+| `Market Intel A Prices` | week × KMA lane × rate type (`all` / `spot` / `contracted`) | `avg_rate`, `mileage` (confidence score > 7, rate ≥ $300, ≥ 50 rates) |
+| `Market Intel A Volumes` | KMA lane × rate type | `volume` (number of distinct rates) |
+| `Market Intel B Volumes` | KMA lane × equipment (spot) | `volumes` (moves), `shippers` (contributor count) |
 
 ### External model output
 
@@ -78,7 +78,7 @@ The benchmark sources don't share surrogate keys with the brokerage data, so the
 
 | Table | Purpose |
 |---|---|
-| `dim_loads_clusters` | Per `Volumes Key`, a snapshot of Market Position (SONAR and DAT), elasticity cluster and the three WSB levels, so they can be used as slicers |
+| `dim_loads_clusters` | Per `Volumes Key`, a snapshot of Market Position (Market Intel A and Market Intel B), elasticity cluster and the three WSB levels, so they can be used as slicers |
 | `dim_lane_activity` | Per `Activity Key`, whether the lane had loads in 2023 / 2024 |
 | `ClusterMappingTable` (hidden) | k-means (k = 5) output behind `Poisson Clusters` |
 | `DateTableTemplate_…` | Auto date/time template created by Power BI (unused) |

@@ -30,17 +30,17 @@ Scatter charts that place each entity by its elasticity scores, coloured by `Ela
 
 | Page | What it shows |
 |---|---|
-| **WSB (Sonar)** | Lane list with the brokerage's WSB next to SONAR's WSB, all elasticity variants, RPM vs. SONAR RPM and share of market volume. Pivot summaries count lanes by cluster × WSB, both internal and SONAR. A combo chart compares weekly RPM against SONAR RPM and volume. |
-| **WSB (DAT)** | The same, benchmarked against DAT volumes and contributors. |
+| **WSB (Market Intel A)** | Lane list with the brokerage's WSB next to Market Intel A's WSB, all elasticity variants, RPM vs. Market Intel A RPM and share of market volume. Pivot summaries count lanes by cluster × WSB, both internal and Market Intel A. A combo chart compares weekly RPM against Market Intel A RPM and volume. |
+| **WSB (Market Intel B)** | The same, benchmarked against Market Intel B volumes and contributors. |
 
 ## 4. Market Position
 
 | Page | What it shows |
 |---|---|
-| **Market Position (Sonar)** | Scatter of KMA lanes (Pearson vs. SRCC elasticity), coloured by Market Position against SONAR. Slicer on position, cards counting lanes per position. |
-| **Market Position (Sonar) [Table]** | The same lanes as a sortable table, with WSB levels, volumes, carriers, shippers and sourcing spread. |
-| **Market Position (DAT)** | Scatter as above, positioned against DAT. |
-| **Market Position (DAT) [Table]** | Table version for DAT. |
+| **Market Position (Market Intel A)** | Scatter of KMA lanes (Pearson vs. SRCC elasticity), coloured by Market Position against Market Intel A. Slicer on position, cards counting lanes per position. |
+| **Market Position (Market Intel A) [Table]** | The same lanes as a sortable table, with WSB levels, volumes, carriers, shippers and sourcing spread. |
+| **Market Position (Market Intel B)** | Scatter as above, positioned against Market Intel B. |
+| **Market Position (Market Intel B) [Table]** | Table version for Market Intel B. |
 
 ## Reading the pages together
 
